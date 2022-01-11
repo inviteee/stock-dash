@@ -18,7 +18,7 @@ def prediction(stock, n_days):
     from datetime import date, timedelta
     # load the data
 
-    df = yf.download(stock, period='60d')
+    df = yf.download(stock, period='120d')
     df.reset_index(inplace=True)
     df['Day'] = df.index
 
